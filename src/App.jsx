@@ -2,57 +2,57 @@
 // 1 SHAKL 
 
 
-// import React, { useState } from "react";
+import React, { useState } from "react";
 
-// function App() {
-//   const [number, setNumber] = useState("");
-//   const [numberData, setNumberData] = useState("");
+function App() {
+  const [number, setNumber] = useState("");
+  const [numberData, setNumberData] = useState("");
 
-//   function handleClickNumber(e) {
-//     e.preventDefault();
+  function handleClickNumber(e) {
+    e.preventDefault();
 
-//     if (number == 3) {
-//       setNumberData("Uchburchak");
-//       return;
-//     } else if (number == 4) {
-//       setNumberData("To'rtburchak");
-//       return;
-//     } else if (number == 5) {
-//       setNumberData("Beshburchak");
-//       return;
-//     } else {
-//       alert("Bunday shakl mavjud emas");
-//     }
-//   }
+    if (number == 3) {
+      setNumberData("Uchburchak");
+      return;
+    } else if (number == 4) {
+      setNumberData("To'rtburchak");
+      return;
+    } else if (number == 5) {
+      setNumberData("Beshburchak");
+      return;
+    } else {
+      alert("Bunday shakl mavjud emas");
+    }
+  }
 
-//   return (
-//     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-//       <div className="bg-white shadow-md rounded-lg p-6 w-96">
-//         <h1 className="text-2xl font-bold text-center text-gray-800 mb-4">
-//           Shaklni aniqlash
-//         </h1>
-//         <input
-//           value={number}
-//           onChange={(e) => setNumber(e.target.value)}
-//           type="number"
-//           placeholder="Raqam kiriting"
-//           className="border border-gray-300 rounded-lg w-full py-2 px-4 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-//         />
-//         <button
-//           onClick={handleClickNumber}
-//           className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg w-full hover:bg-blue-600 transition duration-200"
-//         >
-//           Shaklni top
-//         </button>
-//         <h1 className="mt-4 text-xl font-semibold text-center text-gray-700">
-//           {numberData}
-//         </h1>
-//       </div>
-//     </div>
-//   );
-// }
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <div className="bg-white shadow-md rounded-lg p-6 w-96">
+        <h1 className="text-2xl font-bold text-center text-gray-800 mb-4">
+          Shaklni aniqlash
+        </h1>
+        <input
+          value={number}
+          onChange={(e) => setNumber(e.target.value)}
+          type="number"
+          placeholder="Raqam kiriting"
+          className="border border-gray-300 rounded-lg w-full py-2 px-4 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <button
+          onClick={handleClickNumber}
+          className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg w-full hover:bg-blue-600 transition duration-200"
+        >
+          Shaklni top
+        </button>
+        <h1 className="mt-4 text-xl font-semibold text-center text-gray-700">
+          {numberData}
+        </h1>
+      </div>
+    </div>
+  );
+}
 
-// export default App;
+export default App;
 
 
 
